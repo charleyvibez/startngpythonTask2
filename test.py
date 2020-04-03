@@ -16,6 +16,7 @@ def getUserInput():
             user.update(details)
             print(user[first_name])
             print(user)
+            break
         else:
             while True:
                 password = input("Enter your preferred password: ")
@@ -28,5 +29,4 @@ def getUserInput():
                     print(user[first_name])
                     print(user)
                     break
-
 getUserInput()
