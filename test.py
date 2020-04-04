@@ -32,7 +32,11 @@ def getUserInput():
                     user.update(details)
                     print(user[first_name])
                     print(user)
-                    break
+                    newUser = input("Another user(y/n): ").lower()
+                    if newUser == "y":
+                        getUserInput()
+                    elif newUser == "n":
+                        break
 
 
 getUserInput()
